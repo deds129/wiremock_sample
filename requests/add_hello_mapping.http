@@ -1,0 +1,18 @@
+###
+POST http://localhost:8080/__admin/mappings
+Content-Type: application/json
+
+{
+  "name": "Simple stub - hello world!",
+  "request": {
+    "method": "GET",
+    "url": "/hello"
+  },
+  "response": {
+    "status": 200,
+    "body": "Hello",
+    "headers": {
+      "Content-Type": "text/plain"
+    }
+  }
+}

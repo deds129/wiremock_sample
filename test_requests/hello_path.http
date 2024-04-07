@@ -1,0 +1,6 @@
+###
+GET http://localhost:8080/hello/123
+
+###
+# have to return stubbing error
+GET http://localhost:8080/hello/$$

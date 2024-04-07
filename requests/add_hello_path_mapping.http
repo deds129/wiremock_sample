@@ -1,0 +1,20 @@
+###
+POST http://localhost:8080/__admin/mappings
+Content-Type: application/json
+
+{
+  "name": "Simple stub - hello world!",
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/hello/([a-zA-Z0-9/-]*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "message" : "Hello-{{request.path.[1]}}!"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
